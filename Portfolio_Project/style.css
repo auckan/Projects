@@ -230,7 +230,7 @@ header a {
 .my-work-sec h2 {
   text-align: center;
   padding-top: 5rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   color: black;
 }
 
@@ -257,7 +257,7 @@ header a {
   font-size: 1rem;
 }
 
-.my-work-sec form .container {
+.my-work-sec .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -278,7 +278,6 @@ header a {
   grid-column-end: 4;
   margin: auto;
 }
-
 /* .my-work-sec form :first-child,
 .my-work-sec form :nth-child(3) {
   justify-self: end;
@@ -469,15 +468,16 @@ footer p {
   .my-work-sec {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 5rem 1fr;
+    grid-template-rows: 7rem 1fr;
+    padding: 1rem;
   }
 
-  .my-work-sec :nth-child(2) {
+  .my-work-sec .experience-container {
     grid-column-start: 1;
     grid-column-end: 2;
   }
 
-  .my-work-sec :nth-child(3) {
+  .my-work-sec .projects-title {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -505,11 +505,12 @@ footer p {
   }
 
   .my-work-sec h2 {
-    padding-top: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
   }
 
   .my-work-sec .projects-title {
-    padding-top: 2rem;
+    padding-top: 2.5rem;
   }
 
   .my-work-sec .experience-container {
@@ -517,6 +518,14 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .my-work-sec .work-experience-title {
+    border-right: black dashed 0.1rem;
+  }
+
+  .my-work-sec .experience-container {
+    border-right: dashed black 0.1rem;
   }
 }
 
