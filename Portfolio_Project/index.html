@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alpcan" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/b1f77b8f19.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#top" class="nav-brand">ADMIN</a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-sec">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#my-work-sec"
+              >My Experience and Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-sec">Contact</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <!-- <figure><img src="./assets/images/pic3.png" alt="" /></figure> -->
+        <div class="p-container">
+          <p>Hi, I am</p>
+          <p>Alpcan Uçkan</p>
+          <p>Welcome to my page!</p>
+        </div>
+      </section>
+
+      <section class="about-sec" id="about-sec">
+        <h2 class="about-title">About Me</h2>
+        <h3>who I am</h3>
+        <div class="container">
+          <figure>
+            <img src="./images/joshua-earle-oz1GKlRWab4-unsplash.jpg" alt="" />
+          </figure>
+          <article>
+            <h2>I am an <span>Adventurer</span></h2>
+            <article>
+              <p>
+                I have worked on different R&D projects as a mechanical engineer
+                while I was living in Turkey.
+              </p>
+              <p>
+                I moved to Sweden and started a new adventure like the journey
+                of Bilbo Baggins to the Lonely Mountains!
+              </p>
+              <p>
+                Now, I aim to be a fullstack web developer with the help of my
+                past experiences and FooCoding.
+              </p>
+            </article>
+          </article>
+        </div>
+      </section>
+
+      <section class="my-work-sec" id="my-work-sec">
+        <h2>Work Experience</h2>
+        <div class="experience-container">
+          <ul class="my-work-exp" id="my-work-exp"></ul>
+          <form action="">
+            <h3>Add a new experience</h3>
+            <div class="container">
+              <input
+                class="new-comp-name"
+                id="new-comp-name"
+                type="text"
+                placeholder="Company Name"
+              />
+              <input
+                class="new-position"
+                id="new-position"
+                type="text"
+                placeholder="Position"
+              />
+              <input
+                class="new-start-date"
+                id="new-start-date"
+                type="text"
+                placeholder="Start Date - MM.YYYY"
+              />
+              <input
+                class="new-end-date"
+                id="new-end-date"
+                type="text"
+                placeholder="End Date - MM.YYYY"
+              />
+              <button class="submit-button" id="submit-button" type="button">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <h2 class="projects-title">My Projects</h2>
+        <div class="projects-container">
+          <h3>Clone Website - TNW</h3>
+          <figure>
+            <img src="./images/twn.jpg" alt="" />
+          </figure>
+          <p>
+            Using HTML/CSS, I have replicated the main page of The Next Web
+            website.
+          </p>
+          <a
+            href="https://auckan.github.io/FooCoding/HTML-CSS/Week03/"
+            target="_blank"
+          >
+            <button class="project-button" type="button">View Project</button>
+          </a>
+          <h3 class="second-project-title">My Favorite Books</h3>
+          <figure>
+            <img src="./images/book.jpg" alt="" />
+          </figure>
+          <p>
+            Using HTML/CSS and JS, I have created this website with DOM
+            manipulations method.
+          </p>
+          <a
+            href="https://auckan.github.io/FooCoding/Javascript2/Week01/"
+            target="_blank"
+          >
+            <button class="project-button">View Project</button>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-sec" id="contact-sec">
+        <h2 class="contact-title">Contact</h2>
+        <h3 class>get in touch</h3>
+        <div class="container">
+          <div class="left-column">
+            <ul class="contact-info">
+              <li class="contact-icon">
+                <a
+                  href="https://www.linkedin.com/in/alpcan-uckan/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>
+              </li>
+              <li class="contact-icon">
+                <a
+                  href="https://www.instagram.com/alpcanuckan/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-square-instagram fa-2xl"></i
+                ></a>
+              </li>
+              <li class="contact-icon">
+                <a href="https://github.com/auckan" target="_blank">
+                  <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <form action="get">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit"><strong> Contact Me</strong></button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><p>Copyright © 2023 Alpcan Uçkan. All Rights Reserved.</p></footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

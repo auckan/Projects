@@ -1,0 +1,579 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --color-white: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  min-width: 25rem;
+  color: white;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/******************************* NAVBAR STYLING *******************************/
+
+header {
+  background-color: black;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  min-height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  background-color: black;
+  border-bottom: #ffffff 0.1rem solid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-link {
+  font-size: 1rem;
+  transition: 0.5s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: red;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s ease;
+  height: 18rem;
+}
+
+.bar {
+  display: block;
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 0.3rem auto;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item {
+  margin: 1rem 0;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+/**********Hamburger Nav**********/
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/******************************* HOME SECTION STYLING *******************************/
+.home {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../Portfolio_Project/images/black.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home .p-container {
+  padding-left: 0rem;
+  background-color: black;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.home .p-container :nth-child(2) {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.home p {
+  color: white;
+  text-align: center;
+}
+
+/******************************* ABOUT SECTION STYLING *******************************/
+
+.about-sec {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem 4rem 2rem;
+  padding-top: 4rem;
+}
+
+.about-sec .about-title {
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.about-sec h3 {
+  color: rgb(0, 179, 255);
+  margin-bottom: 2rem;
+  border-bottom: 0.15rem black solid;
+}
+
+.about-sec h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.about-sec p {
+  color: black;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.about-sec h2 span {
+  color: rgb(0, 179, 255);
+}
+
+/* .about-sec .about-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 10rem;
+  height: 0.2rem;
+  background-color: black;
+  transform: translateX(-50%);
+} */
+
+/* .about-sec .about-title::after {
+  content: "who i am";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  padding: 5px;
+  color: crimson;
+  transform: translateX(-50%);
+} */
+
+.about-sec figure img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.about-sec figure img {
+  width: 60%;
+  aspect-ratio: 1/1;
+}
+
+.about-sec article {
+  text-align: justify;
+}
+
+/******************************* MY WORK SECTION STYLING *******************************/
+.my-work-sec {
+  width: 100%;
+  background-color: white;
+  border-top: dashed black 0.2rem;
+  border-bottom: dashed black 0.2rem;
+}
+
+.my-work-sec p {
+  color: black;
+  text-align: center;
+}
+
+.my-work-sec h2 {
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.my-work-sec h3 {
+  color: black;
+}
+
+.my-work-sec form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: dashed black 0.2rem;
+  padding-bottom: 2rem;
+}
+
+.my-work-sec button {
+  width: 5rem;
+  height: 2rem;
+}
+
+.my-work-sec li {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.my-work-sec form .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  border: solid white;
+}
+
+.my-work-sec input {
+  width: 10rem;
+}
+
+.my-work-sec form .container :nth-child(n + 1) {
+  grid-column: span 2;
+}
+
+.my-work-sec form .container :nth-child(5) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  margin: auto;
+}
+
+/* .my-work-sec form :first-child,
+.my-work-sec form :nth-child(3) {
+  justify-self: end;
+} */
+
+.my-work-sec .projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.my-work-sec .projects-title {
+  padding-top: 2rem;
+}
+
+.my-work-sec figure {
+  margin: 0.5rem;
+}
+
+.my-work-sec .project-button {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+/******************************* CONTACT SECTION STYLING *******************************/
+
+.contact-sec {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem 3.5rem 2rem;
+  padding-top: 3.5rem;
+}
+
+.contact-sec .contact-title {
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.contact-sec h3 {
+  color: rgb(0, 179, 255);
+  margin-bottom: 3rem;
+  border-bottom: 0.15rem black solid;
+}
+
+.contact-info {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.contact-sec .right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-sec .right-column form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-sec form input {
+  margin-bottom: 1rem;
+  width: 70vw;
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.contact-sec textarea {
+  margin-bottom: 1rem;
+  width: 70vw;
+  border-radius: 2rem;
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.contact-sec i {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.contact-sec button {
+  width: 35%;
+  margin: auto;
+  margin-top: 1rem;
+  height: 2rem;
+  background-color: hwb(0 82% 17%);
+  color: black;
+  border-radius: 1rem;
+}
+
+/******************************* FOOTER SECTION STYLING *******************************/
+
+footer {
+  background-color: black;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+footer p {
+  color: white;
+}
+/**************************RESPONSIVE DESIGN*********************/
+@media (min-width: 640px) {
+  /******************************* NAVBAR STYLING *******************************/
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-brand {
+    padding-right: 2rem;
+  }
+
+  .nav-menu {
+    position: static;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    column-gap: 2rem;
+    height: auto;
+  }
+
+  .home {
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+
+  .about-sec .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-sec figure {
+    width: 120%;
+  }
+
+  .about-sec figure img {
+    width: 90%;
+    aspect-ratio: 1/0.9;
+  }
+
+  .about-sec article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .about-sec h2 {
+    text-align: left;
+  }
+
+  .about-sec p {
+    text-align: left;
+  }
+
+  .contact-sec form input {
+    width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contact-sec textarea {
+    width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contact-sec button {
+    width: 45%;
+  }
+
+  .my-work-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5rem 1fr;
+  }
+
+  .my-work-sec :nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .my-work-sec :nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .my-work-sec figure {
+    width: 90%;
+    margin: auto;
+  }
+
+  .my-work-sec img {
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .my-work-sec .projects-container {
+    align-self: stretch;
+  }
+
+  .my-work-sec form {
+    border: none;
+  }
+
+  .my-work-sec h2 {
+    padding-top: 2rem;
+  }
+
+  .my-work-sec .projects-title {
+    padding-top: 2rem;
+  }
+
+  .my-work-sec .experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  .nav-menu {
+    column-gap: 4rem;
+  }
+
+  .home {
+    justify-content: center;
+    column-gap: 5rem;
+  }
+
+  .about-sec figure {
+    width: 90%;
+  }
+
+  .about-sec figure img {
+    width: 80%;
+    aspect-ratio: 1/0.8;
+  }
+
+  .about-sec article {
+    margin-right: 2rem;
+    font-size: 1.3rem;
+  }
+
+  .my-work-sec p {
+    font-size: 1.2rem;
+  }
+
+  .my-work-sec input {
+    height: 2rem;
+    width: 15rem;
+  }
+
+  .my-work-sec li {
+    margin-bottom: 2rem;
+  }
+
+  .my-work-sec figure {
+    width: 80%;
+  }
+
+  .my-work-sec img {
+    width: 80%;
+  }
+
+  .contact-sec form input {
+    width: 40vw;
+  }
+
+  .contact-sec textarea {
+    width: 40vw;
+  }
+
+  .contact-sec button {
+    width: 45%;
+  }
+}
