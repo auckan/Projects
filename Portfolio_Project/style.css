@@ -252,6 +252,26 @@ header a {
   height: 2rem;
 }
 
+.my-work-sec .submit-button {
+  border-radius: 1rem;
+  width: 10rem;
+  color: black;
+  background-color: hwb(0 82% 17%);
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #3e878e;
+  color: white;
+}
+
+.my-work-sec ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .my-work-sec li {
   margin-bottom: 1.5rem;
   font-size: 1rem;
@@ -267,6 +287,9 @@ header a {
 
 .my-work-sec input {
   width: 10rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 .my-work-sec form .container :nth-child(n + 1) {
@@ -302,6 +325,16 @@ header a {
 .my-work-sec .project-button {
   margin-bottom: 2rem;
   margin-top: 1rem;
+  border-radius: 1rem;
+  width: 10rem;
+  color: black;
+  background-color: hwb(0 82% 17%);
+  cursor: pointer;
+}
+
+.project-button:hover {
+  background-color: #3e878e;
+  color: white;
 }
 
 /******************************* CONTACT SECTION STYLING *******************************/
@@ -375,6 +408,12 @@ header a {
   background-color: hwb(0 82% 17%);
   color: black;
   border-radius: 1rem;
+  cursor: pointer;
+}
+
+.contact-sec button:hover {
+  background-color: #3e878e;
+  color: white;
 }
 
 /******************************* FOOTER SECTION STYLING *******************************/
