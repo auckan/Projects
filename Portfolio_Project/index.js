@@ -77,8 +77,6 @@ getData();
 /************************** SEND DATA - POST REQUEST ***************************/
 
 document.getElementById("submit-button").onclick = function () {
-  const newExp = [];
-
   const companyInput = document.getElementById("new-comp-name").value;
   const positionInput = document.getElementById("new-position").value;
   const startDateInput = document.getElementById("new-start-date").value;
